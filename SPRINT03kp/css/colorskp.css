@@ -1,0 +1,13 @@
+#colorDiv{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0, 0, 255, 0.158  );
+}
+html{
+    background-color: #e0e0e0;
+    background-image: url(/HTML-BASIC-1/imgkp/vízcsepp.jpg);
+    background-position: left center;
+    background-repeat: repeat-y;
+    
+}

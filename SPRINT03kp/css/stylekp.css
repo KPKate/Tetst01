@@ -49,15 +49,18 @@ list-style: height 14px;
 }
 .img-div{
 background-color: rgb(66, 134, 156);
+position: relative;
 }
 .light-img-div{
     background-color: lightgray;
 }
+#img-1{
+    position: absolute;
+    top: 15px;
+    left: 10px;
+} 
  img{
      width: 14.4%;
      box-shadow: 3px 3px 10px black;
      margin: 1%;
  }  
- #img-1{
-     display: none;
- } 
