@@ -3,6 +3,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Roboto&display=swap');
 
+html{text-transform: none;}
 h2{ 
     font-family: 'Oxygen', sans-serif;
     font-family: 'Roboto', sans-serif;
@@ -12,25 +13,51 @@ h1{
     color: red;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
      font-weight: 100;
-    text-align:left;}
+    text-align:left;
+}
 
     h3{
-    color: brown;}
-    #bioHeader{
-        color: blue;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: brown;
+}
+#bioHeader{
+    color: blue;
+    font-family:'Oxygen', sans-serif;
+     
+};
     }
 #skillsHeader{color: chocolate;
-font-family: 'Oxygen', sans-serif;
-font-weight: 900;}
+     font-family: 'Oxygen', sans-serif;
+     
+        }
+.content{ 
+    color: darkgreen;
+    font-size: 12px;
+    text-transform: none;
+    line-height: normal;
+    font-weight: lighter;
+    font-family: 'Oxygen', sans-serif;
+}
+.bold{
+    font-weight: bold;
+}
 p{ 
-    color: rgb(20, 194, 20); font-size:12px;
+    color: rgb(89, 25, 190); font-size:12px;
     font-family: 'arial', Times, serif;
 text-align:left;
 text-transform:normal;
-list-style: height 14px;}
+list-style: height 14px;
+}
+.img-div{
+background-color: rgb(66, 134, 156);
+}
+.light-img-div{
+    background-color: lightgray;
+}
  img{
-     width
-     : 100px;
-     
- }   
+     width: 14.4%;
+     box-shadow: 3px 3px 10px black;
+     margin: 1%;
+ }  
+ #img-1{
+     display: none;
+ } 
