@@ -9,19 +9,33 @@ body {background-color: #f0f0f0;
 
 .login-div input {
     display:block;
-    margin-bottom: 7px;
-   
+    margin-bottom: 7px red;
+    color: rgb(175, 70, 22);
 }
 
 .login-div input:focus {
-    box-shadow: 2px 2px 2px #c0c0c0;
+    display:block;
+    border: hotpink;
+    margin-bottom: 7px rgb(212, 20, 20);
+    color: rgb(155, 66, 25);box-shadow: green;
+}
+.submit-btn {     
+    background-color: rgb(98, 199, 98);
+    margin-top: 7px;
+    margin-bottom: 7210px rgb(212, 20, 20);
+    color: rgb(126, 55, 22);
+    box-shadow: rgb(99, 167, 99);
 }
 
 ul li:first-child {
     text-decoration: underline;
-    color: red;
+    color: red;                                      
 }
 
 ul li:last-child {
     text-decoration: underline
 }
+ul li:nth-child(3) {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+color: orange;}
