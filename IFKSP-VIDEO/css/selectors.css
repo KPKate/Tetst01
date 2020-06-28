@@ -16,19 +16,16 @@ body {
 
 .login-div input:focus {
     display: block;
-    border: hotpink;
-    margin-bottom: 7px rgb(212, 20, 20);
-    color: rgb(155, 66, 25);
-    box-shadow: green;
+    margin: 12px  rgb(28, 4, 245) ;
+    box-shadow: 10px rgb(255, 0, 0);
 }
 
 .submit-btn {
-    background-color: rgb(98, 199, 98);
     margin-top: 7px;
     margin-bottom: 7px rgb(212, 20, 20);
-    color: rgb(126, 55, 22);
-    box-shadow: rgb(99, 167, 99);
-}
+    color: green;
+    box-shadow: 17px  violet;
+} 
 
 ul li:first-child {
     text-decoration: underline;

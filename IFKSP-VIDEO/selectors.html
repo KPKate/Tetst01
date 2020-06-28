@@ -10,50 +10,67 @@
 </head>
 
 <body>
+     <form action=" adat">
+</form>
+<div class="continer">  
     <span>
-        <div>
-            <fieldset>
-                <legend>Személyes adatok</legend>
-                <h1> Login</h1>
-                <div class="login-div">
-                    <div class="from-group">
-                        <label for="email">Email:  *</label>
-                        <input class="from-conrol" name="email" type="text" reguired>
-                    </div>
-                    <div class="from-group">
-                        <label for="name">Név: *</label>
-                        <input class="from-control" name="name" type="text" reguired>
-                    </div>
-                    <div class="from-group">
-                        <label>Cím: *</label>
-                    <input id="address" name="address" type="text" reguired>
-                    </div>
-                    <div class="from-group">
-                        <label> Megjegyzés: </label>
-                        <textarea name="comment" id="comment" rows="5"></textarea>
-                    </div>
+        <fieldset>
+            <legend>Személyes adatok</legend>
+            <h1> Login</h1>
+            <div class="login-div">
+                <div>
+                    <label for="email">Email cím: *</label>
+                    <input id="email" name="email" type="text" reguired>
                 </div>
-            </fieldset>
-            <fieldset>
-                <legend> Bevásárló lista</legend>
-                <ul>
-                    <li>kenyér </li>
-                    <li>tej </li>
-                    <li>sajt </li>
-                    <li>liszt </li>
-                    <li>valami1</li>
-                    <li>valami2</li>
-                    <li>valami3</li>
-                </ul>
-            </fieldset>
-            <div class="from-group">
-                <button class="submit-btn">Login</button>
+                <div>
+                    <label for="name">Név: *</label>
+                    <input id="name" name="name" type="text" reguired>
+                </div>
+                <div>
+                    <label for="address"> Cím: *</label>
+                    <input id="address" name="address" type="text" reguired>
+                </div>
+                <div>
+                    <label for="comment"> Megjegyzés: </label>
+                    <textarea name="comment" id="comment" rows="5"></textarea>
+                </div>
             </div>
-        </div>
-
-        
+        </fieldset>
     </span>
 
+    <div>
+        <button class="submit-btn">Login</button>
+    </div>
+    <fieldset>
+        <legend> lista</legend>
+
+        <div>
+            <input checked id="nothing" name="extra" type="radio" value="0">
+                <label for="nothing"> Nem kérek </label>
+            </div>
+            <div>
+                <input checked id="cheese" name="extra" type="radio" value="300">
+                    <label for="cheese"> Sajtos </label>
+                </div>
+                <div>
+                    <input checked id="double-cheese" name="extra" type="radio" value="600">
+                        <label for="double-cheese"> Extra sajtos </label>
+                    </div>
+                    <div>
+                        <input checked id="double-meat" name="extra" type="radio" value="1000">
+                            <label for="nothing"> Extra húsos </label>
+                        </div>
+            <ul>
+                <li>kenyér </li>
+                <li>tej </li>
+                <li>sajt </li>
+                <li>liszt </li>
+                <li>valami1</li>
+                <li>valami2</li>
+                <li>valami3</li>
+            </ul>
+    </fieldset>
+    </div>
 </body>
 
 </html>
