@@ -5,9 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="lib/bootstrap-4.5.0-dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/js/main.js">
-  <!-- gomb típusok 
-   <link rel="stylesheet" href="/js/inputfogadás.log"> -->
+
   <title>bootsrap saját</title>
 </head>
 
@@ -18,7 +16,7 @@
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-
+  
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
@@ -55,20 +53,24 @@
             <label for=""> Mennyiség </label>
             <input type="number" name="amount-input" class="form-control">
           </div>
-          <button onclick="calcAmount()" type="button" class="btn btn-primary"> Megrendelés </button>
+          <div class="form-group"> 
+            Fizetendő:  <span class="show-amount"> 0 </span> FT
+          </div>
+          <button onclick="calcAmount();" type="button" class="btn btn-primary"> Megrendelés </button>
 
         </form>
       </div>
       <div class=" col-4"></div>
     </div>
   </div>
+ 
 
 
 
   <!--<div class="container">
     <div class="row">
       <div class=" col">
-        <button type="button" class="btn btn-primary">Primary</button>
+        <button type ="button" class="btn btn-primary">Primary</button>
         <button type="button" class="btn btn-secondary">Secondary</button>
         <button type="button" class="btn btn-success">Success</button>
         <button type="button" class="btn btn-danger">Danger</button>
@@ -82,6 +84,8 @@
        </div>
       </div> -->
 
+
+<script src="js/main.js"> </script>
 
 </body>
 
