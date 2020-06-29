@@ -1,0 +1,6 @@
+document.querySelector ( "input[name='amount-input']")
+<input type=​"number" name=​"amount-input" class=​"form-control">​
+let amount-input=document.querySelector( "input[name='amount-input']");
+VM510:1 Uncaught SyntaxError: Unexpected token '-'
+let amountInput=document.querySelector( "input[name='amount-input']");
+undefined
