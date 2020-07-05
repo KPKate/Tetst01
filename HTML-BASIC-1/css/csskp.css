@@ -1,0 +1,14 @@
+html {
+    background-color: greenyellow;
+}
+h1{
+   color: blue;
+   font-weight: 500px;
+}
+h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color:red;
+    background-color: green
+    ;
+}
