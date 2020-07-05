@@ -1,14 +1,51 @@
-html {
-    background-color: greenyellow;
+
+body {
+    background-color: #634e4e;
 }
-h1{
-   color: blue;
-   font-weight: 500px;
+
+.login-div {
+    padding: 15px;
+    border: solid 1px #c0c0c0;
+    display: inline-block;
 }
-h4 {
+
+.login-div input {
+    display: block;
+    margin-bottom: 7px red;
+    color: rgb(175, 70, 22);
+}
+
+.login-div input:focus {
+    display: block;
+    margin: 12px  rgb(28, 4, 245) ;
+    box-shadow: 10px rgb(255, 0, 0);
+}
+
+.submit-btn {
+    margin-top: 7px;
+    margin-bottom: 7px rgb(212, 20, 20);
+    color: green;
+    box-shadow: 17px  violet;
+} 
+
+ul li:first-child {
+    text-decoration: underline;
+    color: red;
+}
+
+ul li:last-child {
+    text-decoration: underline
+}
+
+ul li:nth-child(3) {
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    color:red;
-    background-color: green
-    ;
+    font-weight: 600;
+    color: orange;
 }
+  .ctable-striped tbody tr:nth-of-type(odd) {
+   background-color: rgba(161, 92, 12, 0.1);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   font-weight: 500;
+  }   
+  
+  
