@@ -48,4 +48,9 @@ ul li:nth-child(3) {
    font-weight: 500;
   }   
   
-  
+  h1{
+      background-color: rgb(9, 0, 128, 0.1);
+      font-variant-caps: normal;
+      font-variant-position: initial;
+      font-variant-position: super;
+  }
