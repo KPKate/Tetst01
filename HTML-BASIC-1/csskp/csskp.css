@@ -1,8 +1,12 @@
 
 body {
-    background-color: #634e4e;
+   /* background-color :#c0c0c0; */
+    background-position: left;
 }
-
+div .container {
+    border-radius: 25px;
+    border-color:red;
+}
 .login-div {
     padding: 15px;
     border: solid 1px #c0c0c0;
@@ -54,3 +58,6 @@ ul li:nth-child(3) {
       font-variant-position: initial;
       font-variant-position: super;
   }
+table { 
+    border: greenyellow;
+}

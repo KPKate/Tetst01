@@ -1,0 +1,22 @@
+body{
+    background-color:rgba(255, 00, 00, 0.1);
+}
+login.div [container] {
+ /*   border-left: rgb(13, 24, 56);
+    border-right: rgb(11, 25, 70);
+    margin: 50px;
+    width: 200px;
+    height: 30px;
+    border-radius:30px;
+    background-color: teal;
+width: 20px;
+    height: 3px;
+    scroll-padding-right:15px ;*/
+    width: 100px;
+    height: 30px;
+}
+p{
+    color: red;
+    width: 200px;
+    height: 30px;
+}
