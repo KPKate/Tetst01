@@ -1,22 +1,55 @@
 body{
-    background-color:rgba(255, 00, 00, 0.1);
+    background-color:rgba(255, 00, 00, 0.5);
 }
-login.div [container] {
- /*   border-left: rgb(13, 24, 56);
-    border-right: rgb(11, 25, 70);
-    margin: 50px;
-    width: 200px;
-    height: 30px;
-    border-radius:30px;
-    background-color: teal;
-width: 20px;
-    height: 3px;
-    scroll-padding-right:15px ;*/
-    width: 100px;
-    height: 30px;
+/* *background-color:yellow;
+  border-radius: 30px;
+    border-style:dotted 5px navy;
+    margin: red 50px;
+    color: green;
 }
-p{
-    color: red;
-    width: 200px;
-    height: 30px;
+div {
+background-color: rgba(200, 100, 80, 0.4);
+margin: 50px  25px 40px 35px;
+border-radius: 10px;
+width: 550px;
+height: 120px;
+border-style: solid;
+border-color: blue;
+border-width:  20px;
+padding: 50px 50px 25px 25px;
+padding: yellow;
+overflow: scroll;
+} */
+p { 
+    margin: 30px;
+    border-radius: 10px;
+    border: 1px solid black;
+    outline: hidden;
+   /* outline: 2px solid red;
+    outline-offset: 15px; */
+    padding-left: 10px;
+    background-color: yellow;
+    width: 250px;
 }
+/*
+ div {
+  border-radius:25px;
+  border-style: dotted 25px black;
+  margin: grey 30px;
+  background-color: yellow;
+  padding:30px;
+  width: 290px;
+  height:100px; 
+  overflow-x: scroll;
+  margin: greenyellow  5px;;
+}  
+div.container  {
+    border-radius:25px;
+    border-color: maroon 10px;
+    margin:20px 50px 4px 12px;
+    background-color:rgb(161, 219, 161);
+    padding: 25px; 
+    width:  205px;
+    height: 100px;
+    overflow: scroll;
+}*/
