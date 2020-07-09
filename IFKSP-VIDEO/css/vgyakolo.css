@@ -1,5 +1,5 @@
 body{
-    background-color:rgba(255, 00, 00, 0.5);
+    background-color:rgba(140, 140, 140, 0.5);
 }
 /* *background-color:yellow;
   border-radius: 30px;
@@ -28,13 +28,12 @@ p {
    /* outline: 2px solid red;
     outline-offset: 15px; */
     padding-left: 10px;
-    background-color: yellow;
+    background-color: green;
     width: 250px;
 }
-/*
- div {
-  border-radius:25px;
-  border-style: dotted 25px black;
+ div.elso{
+  border-radius:12px;
+  border: dotted 2px black;
   margin: grey 30px;
   background-color: yellow;
   padding:30px;
@@ -45,11 +44,25 @@ p {
 }  
 div.container  {
     border-radius:25px;
-    border-color: maroon 10px;
+    border: maroon solid 10px; 
     margin:20px 50px 4px 12px;
     background-color:rgb(161, 219, 161);
-    padding: 25px; 
-    width:  205px;
+    width:  250px;
     height: 100px;
     overflow: scroll;
-}*/
+}
+
+.contaier.div { background-color:white;
+border-color: blue 20 dotted;
+box-sizing:100px 200px;
+border-left: 200px;
+padding-left:width 200px;
+overflow: scroll;
+}
+/*
+outline-style: solid;
+outline-width: 10px;
+outline-offset: 0vmax;
+outline-color: brown;
+padding: 50px;
+} */ 
