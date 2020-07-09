@@ -8,7 +8,7 @@ function calckpAmount() {
     console.log(amount);
   
   }
-  function kiir( ) {
+  function kiir(summa ) {
     let summa= 0;
     let index=0;
     if ( i=0, i<10, i++)  {
