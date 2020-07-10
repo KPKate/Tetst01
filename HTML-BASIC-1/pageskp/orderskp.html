@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/IFKSP-VIDEO/lib/bootstrap-4.5.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/HTML-BASIC-1/csskp/csskp.css">
+    <link rel="stylesheet" href="/HTML-BASIC-1/csskp/stilus.css">
+    <link rel="stylesheet" href="/IFKSP-VIDEO/js/main.js">
+    <link rel="stylesheet" href="/IFKSP-VIDEO/js/mainkp.js">
     <title>Document</title>
 </head>
 <body>
@@ -38,9 +42,9 @@
 
   <div class=" container">
     <div class="row">
-
+<div class="col-1 margoSav"></div>
       
-        <div class="col-4">
+        <div class="col-3">
           <h3> Hamburger rendelés1</h3>
           <form action="">
             <div class=" form-group">
@@ -60,7 +64,7 @@
 
    
     
-      <div class="col-4">
+      <div class="col-3">
         <h3> Hamburger rendelés</h3>
         <form action="">
           <div class=" form-group">
@@ -84,6 +88,10 @@
               <input id="email" name="email" type="text" reguired>
           </div>
           <div>
+            <label for="phone"> Telefon szám: *</label>
+           <input id="phone" name="number" type="text" reguired>
+          </div>
+          <div>
               <label for="name">Név: *</label>
               <input id="name" name="name" type="text" reguired>
           </div>
@@ -100,7 +108,7 @@
         <button class="submit-btn">Login</button>
     </div>
     <fieldset>
-        <legend> lista</legend>
+        <legend>feltétek </legend>
 
         <div>
             <input checked id="nothing" name="extra" type="radio" value="0">
@@ -118,9 +126,11 @@
                         <input checked id="double-meat" name="extra" type="radio" value="1000">
                             <label for="nothing"> Extra húsos </label>
                         </div>
+                        
             
     </fieldset>
     </div>
+     <div class="col-1"></div>
     </div>
       
   </div>
