@@ -1,0 +1,23 @@
+<<<<<<< HEAD
+=======
+/* html {
+    background-color: lightgoldenrodyellow;
+}*/
+/* div.elsoSav {
+    background-color: white;
+    height: 100%;
+} */
+body{ background-color: peachpuff;
+    height: 100%;
+}
+table {
+    background-color: darkorange;
+}
+ div.col-1 {
+    background-color:white; 
+}
+  div.col-2, div.col-3, div.col-4 {
+    background-color:white;
+   /*  height: 100%; */
+}
+>>>>>>> parent of 3802500... formátumok , háttér színek
