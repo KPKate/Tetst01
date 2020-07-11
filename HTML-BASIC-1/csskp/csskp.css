@@ -3,15 +3,6 @@ body {
    /* background-color :#c0c0c0; */
     background-position: left;
 }
-li.nav-item {
-    border-radius: 25px;
-    border-color:rgb(90, 12, 12, 0.3);
-    margin: red;
-    margin: 20px;
-    font: italic white;
-    background-color: rgb(90, 12, 12, 0.3);
- 
-}
 div .container {
     border-radius: 25px;
     border-color:red;
