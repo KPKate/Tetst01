@@ -13,8 +13,8 @@ function calckpAmount() {
     let index=0;
     if ( i=0, i<10, i++)  {
       index+=i; summa+=summa;
-      showSumma.innerHtml = summa;
+      showSumma.innerHTML = summa;
     }
-    else{
+    else{ console.log (summa);
        return summa;}
   }
