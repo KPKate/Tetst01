@@ -68,3 +68,7 @@ padding:px;
 tr.hetfo {
     row-gap: 2;
 }
+table.row { 
+    background-color: inherit;
+}
+

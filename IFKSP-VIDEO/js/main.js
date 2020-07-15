@@ -1,4 +1,4 @@
-function calcAmount() {
+function calckpAmount() {
   let alapar = 1250;
   let mindb=1;
   let maxdb=10;
