@@ -59,8 +59,12 @@ ul li:nth-child(3) {
       font-variant-position: super;
   }
 table { 
-    border: greenyellow;
+    margin-left: 10%;
+    margin-top: 5%;
 }
 div.behuz { font-size: small;
-
+padding:px;
+}
+tr.hetfo {
+    row-gap: 2;
 }

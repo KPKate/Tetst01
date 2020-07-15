@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/IFKSP-VIDEO/lib/bootstrap-4.5.0-dist/css/bootstrap.min.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/HTML-BASIC-1/css/csskp.css">
+  <link rel="stylesheet" href="/IFKSP-VIDEO/lib/bootstrap-4.5.0-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/HTML-BASIC-1/csskp/csskp.css">
+  <link rel="stylesheet" href="/HTML-BASIC-1/csskp/stilus.css">
+  <!--<link rel="stylesheet" href="/IFKSP-VIDEO/js/main.js">
+      <link rel="stylesheet" href="/IFKSP-VIDEO/js/mainkp.js"> -->
+  <title>Rendelés </title>
 </head>
+
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="aboutkp.html" >Navbar</a>
+    <a class="navbar-brand" href="aboutkp.html"><!--Navbar--></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-  
+
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
@@ -23,7 +30,7 @@
           <a class="nav-link" href="productskp.html">Termékeink</a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link " href="orderskp.html">Rendelés<span class="sr-only">(current)</span></a>
+          <a class="nav-link " href="orderskp.html"> Rendelés <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link " href="btkp.html">Kapcsolat</a>
@@ -42,26 +49,7 @@
   <div class=" container">
     <div class="row">
 
-      
-        <div class="col-4">
-          <h3> Hamburger rendelés1</h3>
-          <form action="">
-            <div class=" form-group">
-              <label for=""> Feltét 1</label>
-              <input type="text" name="top-input" class="form-control">
-            </div>
-            <div class=" form-group">
-              <label for=""> Mennyiség 1</label>
-              <input type="number" name="amount-input" class="form-control">
-            </div>
-            <div class="form-group"> 
-              Fizetendő:  <span class="show-amount"> 0 </span> FT
-            </div>
-            <button onclick="calckpAmount();" type="button" class="btn btn-primary"> Megrendelés </button>
-          </form>
-        </div>
 
-   
     
       <div class="col-4">
         <h3> Hamburger rendelés</h3>
@@ -74,61 +62,63 @@
             <label for=""> Mennyiség </label>
             <input type="number" name="amount-input" class="form-control">
           </div>
-          <div class="form-group"> 
-            Fizetendő:  <span class="show-amount"> 0 </span> FT
+          <div class="form-group">
+            Fizetendő: <span class="show-amount"> 0 </span> FT
           </div>
           <button onclick="calckpAmount();" type="button" class="btn btn-primary"> Megrendelés </button>
         </form>
+    <!--  <script src="/IFKSP-VIDEO/js/main.js"> </script> -->
+        <script src="/IFKSP-VIDEO/js/mainkp.js"> </script>
       </div>
       <div class=" col-4">
         <div class="login-div">
           <div>
-              <label for="email">Email cím: *</label>
-              <input id="email" name="email" type="text" reguired>
+            <label for="email">Email cím: *</label>
+            <input id="email" name="email" type="text" reguired>
           </div>
           <div>
-              <label for="name">Név: *</label>
-              <input id="name" name="name" type="text" reguired>
+            <label for="name">Név: *</label>
+            <input id="name" name="name" type="text" reguired>
           </div>
           <div>
-              <label for="address"> Cím: *</label>
-              <input id="address" name="address" type="text" reguired>
+            <label for="address"> Cím: *</label>
+            <input id="address" name="address" type="text" reguired>
           </div>
           <div>
-              <label for="comment"> Megjegyzés: </label>
-              <textarea name="comment" id="comment" rows="5"></textarea>
+            <label for="comment"> Megjegyzés: </label>
+            <textarea name="comment" id="comment" rows="5"></textarea>
           </div>
-      </div>
-      <div>
-        <button class="submit-btn">Login</button>
-    </div>
-    <fieldset>
-        <legend> lista</legend>
-
+        </div>
         <div>
+          <button class="submit-btn">Login</button>
+        </div>
+        <fieldset>
+          <legend> lista</legend>
+
+          <div>
             <input checked id="nothing" name="extra" type="radio" value="0">
-                <label for="nothing"> Nem kérek </label>
-            </div>
-            <div>
-                <input checked id="cheese" name="extra" type="radio" value="300">
-                    <label for="cheese"> Sajtos </label>
-                </div>
-                <div>
-                    <input checked id="double-cheese" name="extra" type="radio" value="600">
-                        <label for="double-cheese"> Extra sajtos </label>
-                    </div>
-                    <div>
-                        <input checked id="double-meat" name="extra" type="radio" value="1000">
-                            <label for="nothing"> Extra húsos </label>
-                        </div>
-            
-    </fieldset>
+            <label for="nothing"> Nem kérek </label>
+          </div>
+          <div>
+            <input checked id="cheese" name="extra" type="radio" value="300">
+            <label for="cheese"> Sajtos </label>
+          </div>
+          <div>
+            <input checked id="double-cheese" name="extra" type="radio" value="600">
+            <label for="double-cheese"> Extra sajtos </label>
+          </div>
+          <div>
+            <input checked id="double-meat" name="extra" type="radio" value="1000">
+            <label for="nothing"> Extra húsos </label>
+          </div>
+
+        </fieldset>
+      </div>
     </div>
-    </div>
-      
+
   </div>
+
 
 </body>
 
 </html>
-    
