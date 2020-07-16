@@ -7,10 +7,7 @@ function calckpAmount() {
       let amountNumber=parseInt(amountInput.value);
       amountNumber=isNaN(amountNumber) ?0:amountNumber;
       vizsgal( amountNumber);
-
-      let amount = amountNumber * price;
-      showAmount.innerHTML = amount;
-      console.log(amount);
+    
 }
 
 function vizsgal(amountv) {
@@ -19,5 +16,9 @@ if (amountv < min ) { amounte=min;
 alert ("legalább 1 terméket kell vásárolnia");}
  else if (amountv > 10) {
 alert ("maximum 10 db terméket vásárolhat!");}
-else {} return;                              
+else { 
+  let amount = amountNumber * price;
+      showAmount.innerHTML = amount;
+      console.log(amount);
+ return;}                      
 }
