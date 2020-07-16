@@ -1,12 +1,12 @@
 
-/* html {
-    background-color: lightgoldenrodyellow;
-}*/
-/* div.elsoSav {
-    background-color: white;
-    height: 100%;
-} */
-body{ background-color:lightgrey;
-    height: 100%;
-width: 100%;
+body { 
+    height: 100%; 
+    background-color:lightgrey;
+    border-left: wheat;
+    border-color: rgb(221, 116, 116);
+    padding-left:  5%;
+    padding-right: 5%;
+    margin: 0px, 25px, 0px, 25px;
+
 }
+

@@ -3,6 +3,14 @@ body {
    /* background-color :#c0c0c0; */
     background-position: left;
 }
+nav.navbar navbar-expand-lg navbar-light bg-light {
+    border-radius: 15px;
+    background-color: maroon;
+
+}
+li.active{
+    background-size: 100pxmax;
+}
 div .container {
     border-radius: 25px;
     border-color:red;
@@ -15,7 +23,7 @@ div .container {
 
 .login-div input {
     display: block;
-    margin-bottom: 7px red;
+    margin-bottom: 7px, red;
     color: rgb(175, 70, 22);
 }
 
