@@ -1,4 +1,5 @@
 function calckpAmount() {
+  console.log ("Hello ifksp mainkp")
     let alapar = 1250;
     let price = parseInt(alapar);
     let amountInput = document.querySelector("input[name='amount-input']");
@@ -6,8 +7,7 @@ function calckpAmount() {
     let amount = parseInt(amountInput.value) * price;
     showAmount.innerHTML = amount;
     console.log(amount);
-  
-  }
+}
   function kiir(summa ) {
     let summa= 0;
     let index=0;
