@@ -8,13 +8,14 @@ function calckpAmount() {
     showAmount.innerHTML = amount;
     console.log(amount);
 }
-  function kiir(summa ) {
-    let summa= 0;
+  function kiir(osszeg ) {
+    let osszeg= 0;
     let index=0;
     if ( i=0, i<10, i++)  {
-      index+=i; summa+=summa;
-      showSumma.innerHTML = summa;
+      index++;
+       osszeg=osszeg+index;
+      showOsszeg.innerHTML = osszeg;
     }
-    else{ console.log (summa);
-       return summa;}
+    else{ console.log (osszeg);
+       return osszeg;}
   }

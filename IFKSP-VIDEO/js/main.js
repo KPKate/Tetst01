@@ -1,5 +1,5 @@
 function calcAmount() {
-  console.log ("Hello ifksp main")
+  console.log ("Hello ifksp main ??")
 //  let alapar = 1250;
 //  let mindb=1;
 //  let maxdb=10;

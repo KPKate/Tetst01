@@ -1,24 +1,4 @@
-/*body {
-    enable-background: url("/HTML-BASIC-1/imgkp/hamkp.jpg");
-} */
-/*.ctable-striped tbody tr:nth-of-type(odd) {
-   background-color: rgba(207, 142, 56, 0.4);
-   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: 50%;
-   }  */
 
-   h3 { 
-       align-content: center;
-   }
-   table {
-    border-collapse: collapse;
-    border: 2px solid black;
-  }
-  
-table,tbody,thead, td, th {
-    border: 2px solid black;
-  }
-  table.table-stiped {
-    background-color: red;
-    color: saddlebrown;
-  }
+html {
+  background-color: rgba(255, 254, 254, 0.555);
+}
