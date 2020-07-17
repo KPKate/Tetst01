@@ -1,4 +1,4 @@
-function calckpAmount() {
+function calckpfAmount() {
     console.log ("Hello ifksp mainkp")
       let alapar = 1250; minkp=1; maxkp=10;
       let price = parseInt(alapar);
