@@ -2,13 +2,12 @@ function calckpfAmount() {
     console.log ("Hello  mainkp")
       let alapar = 1250; minkp=1; maxkp=10;
       let price = parseInt(alapar);
-      let amountNumber1;
       let amountInput = document.querySelector("input[name='amount-input']");
       let showAmount = document.querySelector("span.show-amount");
       let amountNumber=parseInt(amountInput.value);
       amountNumber=isNaN(amountNumber) ? 0 : amountNumber;
       amountNumber1=amountNumber;
-      vizsgal(amountNumber, amountNumber1);
+     var amountNumber1= vizsgal(amountNumber);
       console.log(amountNumber,amountNumber1);
       amountNumber=amountNumber1*price;
     showAmount.innerHTML=amountNumber;
@@ -27,5 +26,5 @@ function calckpfAmount() {
         else { amountv=amountv;}
       amountv1=amountv;
       console.log(amountv, amountv1);
-        return ;                  
+        return  amountv1;                  
 }
