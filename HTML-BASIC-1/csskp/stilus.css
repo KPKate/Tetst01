@@ -14,10 +14,15 @@ nav {
     text-align: center;
     border: 3px solid #e9ded0;
     border-radius: 20px;
-width: 80%;
+    width: 80%;
     box-shadow: yellow;
-    padding: 5px;
-    margin: 10px 100px;
+    padding: 1%;
+    margin: 2% 10%;
+}
+h4 {
+    text-align: center;
+    padding-left: 20px;
+    margin: 40px, 20px, 120px, 20px;
 }
 
 

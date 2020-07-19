@@ -1,0 +1,39 @@
+
+h1{
+    text-align: center;
+}
+h2 {
+    text-align: center;
+    margin: 0 50px 0 0;
+    padding-left: 0px;
+}
+/*.behuz {
+    padding-left: 20px;
+    margin-left: 20px;
+
+} */
+.col-1 {
+    background-color: rosybrown;
+    border-left-style: lid;
+}
+
+.col-6 { 
+margin-left: 60%;
+}
+img {
+float: right;
+}
+.kapcsolat {
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-left: 20px;
+    margin-left: 120px;
+
+}
+.kapcsol { 
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-left: 0px;
+    margin-left: 105px;
+
+}
