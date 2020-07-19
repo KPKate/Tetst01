@@ -10,3 +10,25 @@ body {
 
 }*/
 
+nav {
+    text-align: center;
+    border: 3px solid #e9ded0;
+    border-radius: 20px;
+width: 80%;
+    box-shadow: yellow;
+    padding: 5px;
+    margin: 10px 100px;
+}
+
+
+li.nav-item {
+    width: 75%;
+    background-color: peru;
+}
+
+li.nav-item active {
+    background-color: red;
+    color: white; width: 250px;
+/*    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(250, 0, 0, 0.19);*/
+    text-align: center;
+}
