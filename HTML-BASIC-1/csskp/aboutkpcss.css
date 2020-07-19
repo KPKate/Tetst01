@@ -12,17 +12,33 @@ h2 {
     margin-left: 20px;
 
 } */
-.col-1 {
-    background-color:red;
-    border-left-style: lid;
+/*.col-1 {
+    background-color:rgba(238, 139, 10, 0.5);
+    border-left-style:2px solid groove;
+}*/
+/* img{
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    font-size: 18px;
+  } */
+img.hely {
+position: absolute;
+background-color:rgba(230, 125, 25, 0.3);
+top: 320px;
+  right:150px;
+  height: auto;
+  width: 200px;
 }
+div.relative {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    border: 3px solid #73AD21;
+  } 
+  
+  
 
-.col-6 { 
-margin-left: 60%;
-}
-img {
-float: right;
-}
 .kapcsolat {
     font-size: 16px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
