@@ -1,20 +1,9 @@
 h3 {
     text-align: center;
 }
-table.table-striped {
-
-    width: auto;
-    background-color:rgba(238, 139, 10, 0.171) ;
-}
-div.containert {
-    width: auto;
-}
-table.thead.cim {
-    font-size: 48px;
-}
-.cimsor {
-text-align: center;
-    text-decoration-color:red;
-
-background-color: seagreen;
+table {
+   text-align: center; 
+   background-color:rgba(238, 139, 10, 0.171) ;
+   border: solid 3px mediumorchid;
+   margin: 20px 20px 20px 25px;
 }

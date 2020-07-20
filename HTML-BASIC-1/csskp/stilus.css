@@ -10,7 +10,7 @@ body {
 
 }*/
 
-nav {
+/*nav {
     text-align: center;
     border: 3px solid #e9ded0;
     border-radius: 20px;
@@ -18,7 +18,7 @@ nav {
     box-shadow: yellow;
     padding: 1%;
     margin: 2% 10%;
-}
+}*/
 h4 {
     text-align: center;
     padding-left: 20px;
@@ -28,12 +28,13 @@ h4 {
 
 li.nav-item {
     width: 75%;
-    background-color: peru;
+  background-color:rgba(238, 139, 10, 0.171) ;
 }
 
 li.nav-item active {
-    background-color: red;
-    color: white; width: 250px;
+    background-color:rgba(238, 139, 10, 0.171) ;
+    color: white;
+     width: 15%;
 /*    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(250, 0, 0, 0.19);*/
     text-align: center;
 }

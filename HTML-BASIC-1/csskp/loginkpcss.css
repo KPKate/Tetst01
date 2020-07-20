@@ -10,7 +10,7 @@ h4 {
 div.clearfix {
   border: 3px solid #e9ded0;
   border-radius: 20px;
-  width: 80%;
+  width: 80%; 
   background-color:rgba(238, 139, 10, 0.171) ;
   box-shadow: 0 4px 8px 0 rgba(238, 139, 10, 0.2), 20px 6px 20px 0 rgba(0, 159, 10, 0.39);
   text-align: center;

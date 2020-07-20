@@ -3,7 +3,7 @@ body {
    /* background-color :#c0c0c0; */
     background-position: left;
 }
-nav.navbar navbar-expand-lg navbar-light bg-light {
+nav.navbar  {
     border-radius: 15px;
     background-color: maroon;
 
