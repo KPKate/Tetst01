@@ -9,7 +9,7 @@ nav.navbar navbar-expand-lg navbar-light bg-light {
 
 }
 li.active{
-    background-size: 100pxmax;
+    background-size: 100px;
 }
 div .container {
     border-radius: 25px;
