@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/IFKSP-VIDEO/lib/bootstrap-4.5.0-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/HTML-BASIC-1/csskp/cskp.css">
+  <link rel="stylesheet" href="/HTML-BASIC-1/csskp/stilus.css">
+  <link rel="stylesheet" href="/HTML-BASIC-1/js/mainkpf.js">
+  <link rel="stylesheet" href="/IFKSP-VIDEO/js/main.js">
+  <title>Rendelés </title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="aboutkp.html"><!-- Navbar--> </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="aboutkp.html"> Üzletünkről </a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link " href="orderskp.html">Rendelés <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="btkp.html">  Kapcsolat </a>
+                  <li class="nav-item">
+                    <a class="nav-link" href="productskp.html">Termékeink</a>
+                  </li>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="loginkp.html"> Akcióink</a>
+        </li>
+      </ul>
+     <!--  <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form> -->
+    </div>
+  </nav>
+
+  <div class=" container">
+    <div class="row">
+    
+<form action="">
+      <div class=" col-4">
+        <div class="login-div">
+          <div>
+            <label for="">Email_cím:*</label>
+            <input id="email" name="email" type="text"  required>
+          </div>
+          <div>
+            <label for="name">Név:*</label>
+            <input id="name" name="name" type="text" reguired>
+          </div>
+          <div>
+            <label for="address"> Cím:*</label>
+            <input id="address" name="address" type="text" reguired>
+          </div>
+          <div>
+            <label for="comment"> Megjegyzés: </label>
+            <textarea name="comment" id="comment" rows="5"></textarea>
+          </div>
+        </div>
+        <div>
+          <button class="submit-btn">Login</button>
+        </div>
+      </div>
+      </form>  <div class="col-3">
+        <h3> Hamburger rendelés</h3>
+        <form action="">
+          <div class=" form-group">
+            <label for=""> Feltét </label>
+            <input type="text" name="top-input" class="form-control">
+          </div>
+          <div class=" form-group">
+            <label for=""> Mennyiség </label>
+            <input type="number" name="amount-input" class="form-control">
+          </div>
+          <div class="form-group">
+            Fizetendő: <span class="show-amount"> 0  </span> Ft
+          </div>
+         
+          <button onclick="calckpfAmount()" type="button" class="btn btn-primary"> Megrendelés </button>
+         
+        </form>
+     
+      </div>
+<!-- 
+        <div class="col-3">
+          <legend> Plusz feltétek</legend>
+
+          <div>
+            <input checked id="nothing" name="extra" type="radio" value="0">
+            <label for="nothing"> Nem kérek (0 Ft)</label>
+          </div>
+          <div>
+            <input checked id="cheese" name="extra" type="radio" value="300">
+            <label for="cheese"> Sajtos (300 Ft)</label>
+          </div>
+          <div>
+            <input checked id="double-cheese" name="extra" type="radio" value="600">
+            <label for="double-cheese"> Extra sajtos (600 Ft) </label>
+          </div>
+          <div>
+            <input checked id="double-meat" name="extra" type="radio" value="1000">
+            <label for="nothing"> Extra húsos (1000 Ft)</label>
+        </div>
+          </div> -->
+        
+      </div>
+    </div>
+
+  
+  <script src="/HTML-BASIC-1/js/mainkpf.js"> </script>
+ <script src="/IFKSP-VIDEO/js/main.js"> </script>
+
+
+</body>
+
+</html>
