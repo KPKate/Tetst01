@@ -32,7 +32,7 @@ function vizsgal(amountv, amountv1) {
 }
 
 
-nodeLista = document.querySelectorAll("input");
+  nodeLista = document.querySelectorAll("input");
 function massModify(selector, attribute, value) {
   let nodeList = document.querySelectorAll(selector);
   console.log(nodeList);
@@ -43,8 +43,7 @@ function massModify(selector, attribute, value) {
     console.log(nodeList[i][attribute], attribute, value)
   }
 }
-massModify("input", "placeholder", "érték");
-
+massModify("input", "placeholder", "érték"); 
 // Add helptext
 let helpText = document.createElement("small");
 helpText.className = "form-text text-muted";
@@ -61,25 +60,28 @@ console.log (sendButton);
 sendButton.onclick = function() {
   alert("Hello JS");
 }*/
-//gomb kezelés
-let sendButton = document.querySelector(" .btn.btn-primary");
-sendButton.addEventListener("click", function () { alert("Hello + JS!"); });
+/* gomb kezelés
+let sendButton = document.querySelector("form .btn.btn-primary");
+sendButton.addEventListener("click", function () { alert("Hello + JS!"); }); */
 
 //ablak méretek lekérdezése
-window.addEventListener("resize", function () {
+ window.addEventListener("resize", function () {
   console.log(this.innerHeight, this.innerWidth);
 })
 
 
 
-/* let nodeLista=document.querySelectorAll("input");
- function massModify (selector, attribute, value ) {
-let nodeList = document.querySelectorAll(selector);
-console.log(nodeList);
-for(let i=0; i<nodeList.length; i++) {
-console.log(nodeList[i]);
-nodeList[i][attribute]=value;
-console.log(nodeList[i][attribute], attribute, value)
-}
-}
-massModify("input","placeholder","érték"); */
+// úrlap események"
+let orderForm=document.querySelector( "#orderForm");
+orderForm.addEventListener("submit",function(ev) {
+  ev.preventDefault();
+  console.log(this,"rendelés");
+  let inputs= this.querySelectorAll("input");
+console.log(inputs);
+ console.log(inputs[0],0);
+let values = {};
+ for (let i=0; i<orderForm.length; i++) {
+   values[inputs[i][name]] =inputs[i];
+ }
+ console.log (values[i]);
+});
