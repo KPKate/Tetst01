@@ -37,7 +37,7 @@ function massModify(selector, attribute, value) {
   let nodeList = document.querySelectorAll(selector);
   console.log(nodeList);
   for (let i = 0; i < nodeList.length; i++) {
-    console.log(nodeList[i] , i);
+    console.log(nodeList[i]);
     console.log(i);
     nodeList[i][attribute] = value;
     console.log(nodeList[i][attribute], attribute, value)
