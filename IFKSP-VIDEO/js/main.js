@@ -7,7 +7,7 @@ function calcAmount() {
   amountNumber = isNaN(amountNumber) ? 0 : amountNumber;
   amountNumber1 = amountNumber;
   var amountNumber1 = vizsgal(amountNumber);
-  console.log(amountNumber, amountNumber1);
+  /*console.log(amountNumber, amountNumber1);*/
   amountNumber = amountNumber1 * price;
   showAmount.innerHTML = amountNumber;
   return;
@@ -27,7 +27,7 @@ function vizsgal(amountv, amountv1) {
   }
   else { amountv = amountv; }
   amountv1 = amountv;
-  console.log(amountv, amountv1);
+  /*console.log(amountv, amountv1);*/
   return amountv1;
 }
 // Add helptext
@@ -39,4 +39,16 @@ let parent = document.querySelector("div.form-group:nth-child(1)");
 parent.appendChild(helpText);
 // let helpTEXT eltávolítása
 parent.removeChild(helpText);
+
+// Window events.
+/*let sendButton = document.querySelector(" .btn.btn-primary");
+console.log (sendButton);
+sendButton.onclick = function() {
+  alert("Hello JS");
+}*/
+//gomb kezelés
+let sendButton = document.querySelector(" .btn.btn-primary");
+sendButton.addEventListener("click",function(){alert("Hello + JS!");});
+
+
 
