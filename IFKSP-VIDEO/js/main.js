@@ -50,5 +50,7 @@ sendButton.onclick = function() {
 let sendButton = document.querySelector(" .btn.btn-primary");
 sendButton.addEventListener("click",function(){alert("Hello + JS!");});
 
-
-
+//ablak méretek lekérdezése
+window.addEventListener("resize",function() {
+  console.log(this.innerHeight, this.innerWidth);
+})
