@@ -30,6 +30,21 @@ function vizsgal(amountv, amountv1) {
   /*console.log(amountv, amountv1);*/
   return amountv1;
 }
+
+
+nodeLista = document.querySelectorAll("input");
+function massModify(selector, attribute, value) {
+  let nodeList = document.querySelectorAll(selector);
+  console.log(nodeList);
+  for (let i = 0; i < nodeList.length; i++) {
+    console.log(nodeList[i] , i);
+    console.log(i);
+    nodeList[i][attribute] = value;
+    console.log(nodeList[i][attribute], attribute, value)
+  }
+}
+massModify("input", "placeholder", "érték");
+
 // Add helptext
 let helpText = document.createElement("small");
 helpText.className = "form-text text-muted";
@@ -38,7 +53,7 @@ helpText.innerHTML = "Adja meg a feltéteket!";
 let parent = document.querySelector("div.form-group:nth-child(1)");
 parent.appendChild(helpText);
 // let helpTEXT eltávolítása
-parent.removeChild(helpText);
+// parent.removeChild(helpText);
 
 // Window events.
 /*let sendButton = document.querySelector(" .btn.btn-primary");
@@ -48,9 +63,23 @@ sendButton.onclick = function() {
 }*/
 //gomb kezelés
 let sendButton = document.querySelector(" .btn.btn-primary");
-sendButton.addEventListener("click",function(){alert("Hello + JS!");});
+sendButton.addEventListener("click", function () { alert("Hello + JS!"); });
 
 //ablak méretek lekérdezése
-window.addEventListener("resize",function() {
+window.addEventListener("resize", function () {
   console.log(this.innerHeight, this.innerWidth);
 })
+
+
+
+/* let nodeLista=document.querySelectorAll("input");
+ function massModify (selector, attribute, value ) {
+let nodeList = document.querySelectorAll(selector);
+console.log(nodeList);
+for(let i=0; i<nodeList.length; i++) {
+console.log(nodeList[i]);
+nodeList[i][attribute]=value;
+console.log(nodeList[i][attribute], attribute, value)
+}
+}
+massModify("input","placeholder","érték"); */
