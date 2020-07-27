@@ -64,10 +64,10 @@ sendButton.onclick = function() {
 let sendButton = document.querySelector("form .btn.btn-primary");
 sendButton.addEventListener("click", function () { alert("Hello + JS!"); }); */
 
-//ablak méretek lekérdezése
+/*ablak méretek lekérdezése
  window.addEventListener("resize", function () {
   console.log(this.innerHeight, this.innerWidth);
-})
+}) */
 
 
 
@@ -77,11 +77,15 @@ orderForm.addEventListener("submit",function(ev) {
   ev.preventDefault();
   console.log(this,"rendelés");
   let inputs= this.querySelectorAll("input");
-console.log(inputs);
+   inputs=document.getElementsByTagName(name);
+console.log(inputs, orderForm.length,inputs.length);
+console.log(orderForm[0],orderForm[1],orderForm[2],"orderForm");
  console.log(inputs[0],0);
 let values = {};
- for (let i=0; i<orderForm.length; i++) {
-   values[inputs[i][name]] =inputs[i];
+for (let i=0; i<(orderForm.length-1); i++) {
+  values[i]=values[inputs[i]];
+  console.log (values[i],values[inputs[i]],inputs[i],inputs[i]);
+ /* values[inputs[i][name]] =inputs[i][value];*/
  }
- console.log (values[i]);
+ /*console.log (values[i]);*/
 });
