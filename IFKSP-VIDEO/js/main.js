@@ -91,6 +91,19 @@ orderForm.addEventListener("submit",function(ev) {
   }
   console.log(values,"rendelési objektum");
 });
+let orderszForm = document.querySelector( "#orderForm");
+orderszForm.addEventListener("submit",function(ev) {
+  ev.preventDefault();
+  console.log(this,"rendelés szelect");
+  let szelect= this.querySelectorAll("#topInput");
+  let values2= [];
+  let feltetSzelect=[];
+  for(let isz=0; isz<szelect.length; isz++) {
+    values2[isz]= orderszForm[isz].value;
+feltetSzelect[isz]=toppings[values2[isz]];
+  }
+  console.log(values2, feltetSzelect,"rendelési array");
+});
 
   
 
