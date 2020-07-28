@@ -102,7 +102,8 @@ orderszForm.addEventListener("submit",function(ev) {
     values2[isz]= orderszForm[isz].value;
 feltetSzelect[isz]=toppings[values2[isz]];
   }
-  console.log(values2, feltetSzelect,"rendelési array");
+  console.log("szelect sorszáma",values2,);
+  console.log( "rendelési array",feltetSzelect,);
 });
 
   
