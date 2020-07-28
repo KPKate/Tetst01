@@ -93,3 +93,23 @@ console.log(nodeList[i][attribute], attribute, value)
 }
 }
 massModify("input","placeholder","érték")
+
+
+
+
+// elemek lekérdezése, módosítása
+let topInput=document.querySelector("input#topInput");
+topInput.getAttribute("class");
+topInput.getAttribute("name");
+topInput.getAttribute("type");
+topInput.getAttribute("id");
+topInput.getAttributes;
+//módosítás set
+topInput.setAttribute("type","email");
+topInput.setAttribute("type","password");
+// attritum a tag elemek nevei
+
+
+
+
+

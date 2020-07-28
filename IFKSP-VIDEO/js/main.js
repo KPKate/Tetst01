@@ -30,21 +30,21 @@ function vizsgal(amountv, amountv1) {
   /*console.log(amountv, amountv1);*/
   return amountv1;
 }
-
-
+// massModify fg elem kiválasztás és módosítás 
   nodeLista = document.querySelectorAll("input");
 function massModify(selector, attribute, value) {
   let nodeList = document.querySelectorAll(selector);
-  console.log(nodeList);
+ // console.log(nodeList);
   for (let i = 0; i < nodeList.length; i++) {
-    console.log(nodeList[i]);
-    console.log(i);
+  //  console.log(nodeList[i]);
+    //console.log(i);
     nodeList[i][attribute] = value;
-    console.log(nodeList[i][attribute], attribute, value)
+   // console.log("nodeList elem",nodeList[i][attribute], attribute, value)
   }
 }
 massModify("input", "placeholder", "érték"); 
-// Add helptext
+// Add helptext 
+
 let helpText = document.createElement("small");
 helpText.className = "form-text text-muted";
 helpText.innerHTML = "Adja meg a feltéteket!";
@@ -68,24 +68,40 @@ sendButton.addEventListener("click", function () { alert("Hello + JS!"); }); */
  window.addEventListener("resize", function () {
   console.log(this.innerHeight, this.innerWidth);
 }) */
+//parent element kezelése felugro üzenet a topInput fölé
+let alertCloseButtons=document.querySelectorAll(".close[data-dismiss='alert']");
+let alertCloseEventHandlerFunction=function(ev){
+  this.parentElement.style.display="none";
+};
+for( let i=0; i< alertCloseButtons.length; i++) {
+  alertCloseButtons[i].addEventListener("click",alertCloseEventHandlerFunction );
+}
 
 
 
 // úrlap események"
-let orderForm=document.querySelector( "#orderForm");
+let orderForm = document.querySelector( "#orderForm");
 orderForm.addEventListener("submit",function(ev) {
   ev.preventDefault();
   console.log(this,"rendelés");
   let inputs= this.querySelectorAll("input");
-   inputs=document.getElementsByTagName(name);
-console.log(inputs, orderForm.length,inputs.length);
-console.log(orderForm[0],orderForm[1],orderForm[2],"orderForm");
- console.log(inputs[0],0);
-let values = {};
-for (let i=0; i<(orderForm.length-1); i++) {
-  values[i]=values[inputs[i]];
-  console.log (values[i],values[inputs[i]],inputs[i],inputs[i]);
- /* values[inputs[i][name]] =inputs[i][value];*/
- }
- /*console.log (values[i]);*/
+  let values = {};
+  for(let i=0; i<inputs.length; i++) {
+    values[inputs[i].name]= inputs[i].value;
+  }
+  console.log(values,"rendelési objektum");
 });
+
+  
+
+//parent element kezelése felugro üzenet a topInput fölé
+/*let alertCloseButtons=document.querySelectorAll(".close[data-dismiss='alert']");
+let alertCloseEventHandlerFunction=function(ev){
+  this.parentElement.style.display="none";
+};
+for( let i=0; i< alertCloseButtons.length; i++) {
+  alertCloseButtons[i].addEventListener("click",alertCloseEventHandlerFunction );
+}*/
+
+
+
