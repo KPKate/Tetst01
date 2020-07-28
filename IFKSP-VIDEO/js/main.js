@@ -60,9 +60,6 @@ console.log (sendButton);
 sendButton.onclick = function() {
   alert("Hello JS");
 }*/
-/* gomb kezelés
-let sendButton = document.querySelector("form .btn.btn-primary");
-sendButton.addEventListener("click", function () { alert("Hello + JS!"); }); */
 
 /*ablak méretek lekérdezése
  window.addEventListener("resize", function () {
@@ -77,6 +74,9 @@ for( let i=0; i< alertCloseButtons.length; i++) {
   alertCloseButtons[i].addEventListener("click",alertCloseEventHandlerFunction );
 }
 
+//felugró ablak click-re
+/*let sendButton = document.querySelector("form .btn.btn-primary");
+sendButton.addEventListener("click", function () { alert("Hello + JS!"); }); */
 
 
 // úrlap események"
