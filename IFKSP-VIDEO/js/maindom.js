@@ -112,4 +112,22 @@ topInput.setAttribute("type","password");
 
 
 
+//while ciklus
+let animal={name: "macska", age:2,date:Date(2018,6,21) };
+let keys=Object.keys(animal);
+i=0;
+while(i<keys.length) {
+console.log(animal[keys[i]]);
+i++;
+};
+
+
+// do while ciklus
+let i=10;
+do{
+ console.log(i) ;
+i++;
+} 
+while (i<0);
+
 

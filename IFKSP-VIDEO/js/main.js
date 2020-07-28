@@ -105,3 +105,26 @@ for( let i=0; i< alertCloseButtons.length; i++) {
 
 
 
+
+
+//select elem kitöltése.
+let toppings=[
+  "Szalonna",
+  "Hagymakrém",
+  "Tükörtojás",
+  "Extra sonka",
+  "Extra sajt"
+];
+let toppingSelect = document.querySelector("#topInput");
+let index=0;
+while (index < toppings.length) {
+  let option =document.createElement("option");
+  // ez csak ismert sorszámnál jó használta helyette?
+ // option.value= toppings[index];
+  option.value= index;
+  option.innerHTML= toppings[index];
+  toppingSelect.appendChild(option);
+  index++;
+}
+
+
