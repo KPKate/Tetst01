@@ -28,12 +28,27 @@ let users =[
  {surname:"Nagy", firstname:"Edit", age:57},
  {surname:"Dér", firstname:"László", age:39},
 ];
+
+/* // tbody- egy elemének létrehozása
 let tableBody= document.querySelector("#userTable tbody");
-//let createdTD = (html,parent) => {
 for (let k in users) {
     let tr= document.createElement("tr");
     let td= document.createElement("td");
     tr.innerHTML =parseInt(k)+1;
     tr.appendChild(td);
+    tableBody.appendChild(tr);
+} */
+// tbody  létrehozása
+let tableBody= document.querySelector("#userTable tbody");
+let createTD = (html, parent) => {
+    let td= document.createElement("td");
+    td.innerHTML =html;
+    parent.appendChild(td);
+};
+for (let k in users) {
+    let tr= document.createElement("tr");
+    createTD( parseInt(k)+1, tr);
+
+   
     tableBody.appendChild(tr);
 }
