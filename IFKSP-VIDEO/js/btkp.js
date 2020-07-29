@@ -38,6 +38,7 @@ for (let k in users) {
     tr.appendChild(td);
     tableBody.appendChild(tr);
 } */
+
 // tbody  létrehozása
 let tableBody= document.querySelector("#userTable tbody");
 let createTD = (html, parent) => {
@@ -45,10 +46,34 @@ let createTD = (html, parent) => {
     td.innerHTML =html;
     parent.appendChild(td);
 };
+
+// fg a gomb csoportokra
+let createButtonGroup= parent => {
+    let group=document.createElement("div");
+    group.className=" btn-group";
+
+    let btnInfo=document.createElement("button");
+    btnInfo.className="btn-info btn";
+    btnInfo.innerHTML='<i class="fas fa-sync-alt"></i>';
+
+    let btnDanger=document.createElement("button");
+    btnDanger.className=" btn-danger btn";
+    btnDanger.innerHTML=' <i class=" far fa-trash-alt"></i>';
+
+     group.appendChild(btnInfo);
+     group.appendChild(btnDanger);
+
+     let td=document.createElement("td");
+     td.appendChild(group);
+     parent.appendChild(td);
+
+}
 for (let k in users) {
     let tr= document.createElement("tr");
     createTD( parseInt(k)+1, tr);
-
-   
+for (let value of Object.values(users[k])) {
+    createTD (value,tr);
+    }
+   createButtonGroup(tr);
     tableBody.appendChild(tr);
-}
+};
