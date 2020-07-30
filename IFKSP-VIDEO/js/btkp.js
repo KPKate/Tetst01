@@ -21,7 +21,7 @@ let users =[
  {surname:"Tóth", firstname:"János", age:62},
  {surname:"Balla", firstname:"Patri", age:3},
  {surname:"Szabó", firstname:"Ági", age:56},
- {surname:"Kéry", firstname:"Zatán", age:36},
+ {surname:"Kéry", firstname:"Zalán", age:36},
  {surname:"Váry", firstname:"Hanna", age:30},
  {surname:"Váry", firstname:"Kinga", age:30},
  {surname:"Vajda", firstname:"Árpád", age:54},
