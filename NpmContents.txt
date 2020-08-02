@@ -1,0 +1,73 @@
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+*************************************************************
+
+PS D:\GitHub\KPKate\Tetst01> npm i lodash -g
++ lodash@4.17.19
+added 1 package from 2 contributors in 3.367s
+
+PS D:\GitHub\KPKate\Tetst01> npm i express-generator -g
+npm WARN deprecated mkdirp@0.5.1: Legacy versions of mkdirp are no longer supported. Please update to mkdirp 1.x. (Note that the API surface has changed to use Promises in 1.x.)
+C:\Users\kissz\AppData\Roaming\npm\express -> C:\Users\kissz\AppData\Roaming\npm\node_modules\express-generator\bin\express-cli.js
++ express-generator@4.16.1
+added 10 packages from 13 contributors in 5.08s
+PS D:\GitHub\KPKate\Tetst01> 
+
+*************************************************************
+
+PS D:\GitHub\KPKate\Tetst01> npm init -y
+Wrote to D:\GitHub\KPKate\Tetst01\package.json:
+
+{
+  "name": "Tetst01",
+  "version": "1.0.0",
+  "description": "Test01 EduWeb",
+  "main": "appU.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+    "type": "git",
+    "url": "git+https://github.com/KPKate/Tetst01.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KPKate/Tetst01/issues"
+  },
+  "homepage": "https://github.com/KPKate/Tetst01#readme"
+}
+
+
+*************************************************************
+
+PS D:\GitHub\KPKate\Tetst01>  npm i json-server -g
+npm WARN deprecated request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142
+npm WARN deprecated har-validator@5.1.5: this library is no longer supported
+C:\Users\kissz\AppData\Roaming\npm\json-server -> C:\Users\kissz\AppData\Roaming\npm\node_modules\json-server\lib\cli\bin.js
++ json-server@0.16.1
+added 229 packages from 124 contributors in 92.7s
+PS D:\GitHub\KPKate\Tetst01> 
+
+*************************************************************
+
+PS D:\GitHub\KPKate\Tetst01\IFKSP-Server> npm init -y
+Wrote to D:\GitHub\KPKate\Tetst01\IFKSP-Server\package.json:
+
+{
+  "name": "IFKSP-Server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "appU.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+
+
+PS D:\GitHub\KPKate\Tetst01\IFKSP-Server> 
