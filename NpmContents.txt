@@ -71,3 +71,11 @@ Wrote to D:\GitHub\KPKate\Tetst01\IFKSP-Server\package.json:
 
 
 PS D:\GitHub\KPKate\Tetst01\IFKSP-Server> 
+
+
+
+*************************************************************
+
+
+https://docs.microsoft.com/hu-hu/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7#short-description
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
