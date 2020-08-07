@@ -1,20 +1,46 @@
 {
-    "users": [
-        {"id": 1, "name": "KeresztNév01 VezetékNév01", "email": "name01@service.hu"},
-        {"id": 2, "name": "KeresztNév02 VezetékNév02", "email": "name02@service.hu"},
-        {"id": 3, "name": "KeresztNév03 VezetékNév03", "email": "name03@service.hu"},
-        {"id": 4, "name": "KeresztNév04 VezetékNév04", "email": "name04@service.hu"},
-        {"id": 5, "name": "KeresztNév05 VezetékNév05", "email": "name05@service.hu"},
-        {"id": 6, "name": "KeresztNév06 VezetékNév06", "email": "name06@service.hu"},
-        {"id": 7, "name": "KeresztNév07 VezetékNév07", "email": "name07@service.hu"},
-        {"id": 8, "name": "KeresztNév08 VezetékNév08", "email": "name08@service.hu"},
-        {"id": 9, "name": "KeresztNév09 VezetékNév09", "email": "name09@service.hu"},
-        {"id": 10, "name": "KeresztNév10 VezetékNév10", "email": "name10@service.hu"}
-    ],
-
-  
-    "comments": [
-    {"id": 14, "body": "some coments", "userId": 1}
-    ]
-
+  "users": [
+    {
+      "id": 1,
+      "name": "KeresztNév01 VezetékNév01",
+      "email": "name01@service.hu"
+    },
+    {
+      "id": 3,
+      "name": "KeresztNév03 VezetékNév03",
+      "email": "name03@service.hu"
+    },
+    {
+      "id": 4,
+      "name": "KeresztNév04 VezetékNév04",
+      "email": "name04@service.hu"
+    },
+    {
+      "id": 5,
+      "name": "KeresztNév05 VezetékNév05",
+      "email": "name05@service.hu"
+    },
+    {
+      "id": 6,
+      "name": "KeresztNév06 VezetékNév06",
+      "email": "name06@service.hu"
+    },
+    {
+      "id": 7,
+      "name": "KeresztNév07 VezetékNév07",
+      "email": "name07@service.hu"
+    },
+    {
+      "id": 9,
+      "name": "KeresztNév09 VezetékNév09",
+      "email": "name09@service.hu"
+    }
+  ],
+  "comments": [
+    {
+      "id": 14,
+      "body": "some coments",
+      "userId": 1
+    }
+  ]
 }
