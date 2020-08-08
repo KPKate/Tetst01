@@ -1,36 +1,4 @@
 {
-  "users": [
-    {
-      "id": 1,
-      "name": "KeresztNév01 VezetékNév01",
-      "email": "name01@service.hu"
-    },
-    {
-      "id": 4,
-      "name": "KeresztNév04 VezetékNév04",
-      "email": "name04@service.hu"
-    },
-    {
-      "id": 5,
-      "name": "KeresztNév05 VezetékNév05",
-      "email": "name05@service.hu"
-    },
-    {
-      "id": 6,
-      "name": "KeresztNév06 VezetékNév06",
-      "email": "name06@service.hu"
-    },
-    {
-      "id": 7,
-      "name": "KeresztNév07 VezetékNév07",
-      "email": "name07@service.hu"
-    }
-  ],
-  "comments": [
-    {
-      "id": 14,
-      "body": "some coments",
-      "userId": 1
-    }
-  ]
+  "users": [],
+  "comments": []
 }
