@@ -1,4 +1,20 @@
 {
-  "users": [],
-  "comments": []
+  
+  "users": [
+    {
+      "id": 1,
+      "name": "KeresztNév01 VezetékNév01",
+      "email": "name01@service.hu"
+    },
+    {
+      "id": 3,
+      "name": "KeresztNév03 VezetékNév03",
+      "email": "name03@service.hu"
+    },
+    {
+      "id": 4,
+      "name": "KeresztNév04 VezetékNév04",
+      "email": "name04@service.hu"
+    }
+  ]
 }
