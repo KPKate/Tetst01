@@ -114,12 +114,16 @@ function newUserRow() {
 
 function createUser(btn) {
     let tr = btn.parentElement.parentElement;
+    let data = getRowData(tr);
+    console.log(data);
+}
+
+
+function getRowData(tr) {
     let inputs = tr.querySelectorAll("input.form-control");
-    console.log(inputs);
     let data = {};
     for (let i = 0; i < inputs.length; i++) {
         data[inputs[i].name] = inputs[i].value;
     }
-
-    console.log(data);
+    return data;
 }
