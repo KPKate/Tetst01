@@ -126,4 +126,5 @@ function getRowData(tr) {
         data[inputs[i].name] = inputs[i].value;
     }
     return data;
-}
+} 
+//
