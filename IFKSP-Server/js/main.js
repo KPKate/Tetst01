@@ -28,7 +28,7 @@ function fillDataTable(data, tableID) {
     }
 
     //Add  new user row to the table.
-    let newRow = newUserRow();
+    let newRow = newUserRow(data[0]);
     table.appendChild(newRow);
 
     let tBody = table.querySelector("tbody");
