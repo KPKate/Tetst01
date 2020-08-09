@@ -1,4 +1,61 @@
 {
-  "users": [],
-  "comments": []
+  "users": [
+    {
+      "id": 1,
+      "name": "KeresztNév01 VezetékNév01",
+      "email": "name01@service.hu"
+    },
+    {
+      "id": 3,
+      "name": "KeresztNév03 VezetékNév03",
+      "email": "name03@service.hu"
+    },
+    {
+      "id": 4,
+      "name": "KeresztNév04 VezetékNév04",
+      "email": "name04@service.hu"
+    },
+    {
+      "id": 5,
+      "name": "KeresztNév05 VezetékNév05",
+      "email": "name05@service.hu"
+    },
+    {
+      "id": 6,
+      "name": "KeresztNév06 VezetékNév06",
+      "email": "name06@service.hu"
+    },
+    {
+      "id": 7,
+      "name": "KeresztNév07 VezetékNév07",
+      "email": "name07@service.hu"
+    },
+    {
+      "id": 9,
+      "name": "KeresztNév09 VezetékNév09",
+      "email": "name09@service.hu"
+    },
+    {
+      "name": "",
+      "email": "",
+      "id": 10
+    },
+    {
+      "name": "",
+      "email": "",
+      "id": 11
+    },
+    {
+      "name": "Kiss",
+      "email": "kiss.zoltan.84@gmail.com",
+      "id": 12
+    }
+  ],
+  "comments": [
+    {
+      "id": 14,
+      "body": "some coments",
+      "userId": 1
+    }
+  ]
 }
