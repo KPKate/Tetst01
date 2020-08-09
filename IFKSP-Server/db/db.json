@@ -36,26 +36,29 @@
       "email": "name09@service.hu"
     },
     {
-      "name": "",
-      "email": "",
+      "name": "Kiss",
+      "email": "kiss.zoltan.84@gmail.com",
       "id": 10
-    },
-    {
-      "name": "",
-      "email": "",
-      "id": 11
     },
     {
       "name": "Kiss",
       "email": "kiss.zoltan.84@gmail.com",
-      "id": 12
-    }
-  ],
-  "comments": [
+      "id": 11
+    },
     {
-      "id": 14,
-      "body": "some coments",
-      "userId": 1
+      "name": "farwez",
+      "email": "hhhztu131",
+      "id": 12
+    },
+    {
+      "name": "jsrjj",
+      "email": "fggww",
+      "id": 13
+    },
+    {
+      "name": "ihih",
+      "email": "ghjjh@gmail.com",
+      "id": 14
     }
   ]
 }

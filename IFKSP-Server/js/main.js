@@ -40,11 +40,15 @@ function fillDataTable(data, tableID) {
         let tr = createAnyElement("tr");
         for (let k of keys) {
             let td = createAnyElement("td");
-           let input = createAnyElement("input", {
-               class: "form-control",
-               value: row[k]
-           });
-               td.appendChild(input);
+            let input = createAnyElement("input", {
+                class:"form-control",
+                value: row[k],
+                name: k
+            });
+            if (k == "id") {
+            input = setAttribute("readonly", true);
+           }  
+                td.appendChild(input);
             tr.appendChild(td);
         }
         let btnGroup = createBtnGroup();
@@ -63,7 +67,7 @@ function createAnyElement(name, attributes) {
 
 function createBtnGroup() {
     let group = createAnyElement("div", { class: "btn btn-group" });
-    let infoBtn = createAnyElement("button", { class: "btn btn-info",/* onclick: "getInfo(this)"*/ });
+    let infoBtn = createAnyElement("button", { class: "btn btn-info", onclick: "setRow(this)" });
     infoBtn.innerHTML = '<i class="fa fa-refresh" aria-hidden="true"></i>';
     let delBtn = createAnyElement("button", { class: "btn btn-danger", onclick: "delrow(this)" });
     delBtn.innerHTML = '<i class="fa fa-trash" aria-hidden="true"></i>';
@@ -142,7 +146,6 @@ function createUser(btn) {
     );
 }
 
-
 function getRowData(tr) {
     let inputs = tr.querySelectorAll("input.form-control");
     let data = {};
@@ -151,3 +154,11 @@ function getRowData(tr) {
     }
     return data;
 } 
+
+// SEt data.
+function setRow(btn) {
+    let tr = btn.parentElement.parentElement.parentElement;
+    let data  = getRowData(tr);
+
+    console.log(data);
+}
