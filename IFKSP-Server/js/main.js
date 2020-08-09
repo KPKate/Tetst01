@@ -28,10 +28,10 @@ function fillDataTable(data, tableID) {
     }
 
     //Add  new user row to the table.
-    let newRow = newUserRow(data[0]);
-    table.appendChild(newRow);
-
     let tBody = table.querySelector("tbody");
+    tBody.innerHTML = '';
+    let newRow = newUserRow();
+    tBody.appendChild(newRow);
     for (let row of data) {
         let tr = createAnyElement("tr");
         for (let k in row) {
@@ -90,9 +90,9 @@ function delrow(btn) {
 //create  new user.
 function newUserRow() {
     let tr = createAnyElement("tr");
-    for (let k in {id: '' ,name: '', email: '' } ) {
+    for (let k in { id: '', name: '', email: '' }) {
         let td = createAnyElement("td");
-        let input =createAnyElement("input", {
+        let input = createAnyElement("input", {
             class: "form-control",
             name: k
         });
@@ -103,7 +103,7 @@ function newUserRow() {
     let newBtn = createAnyElement("button", {
         class: "btn btn-success",
         onclick: "createUser(this)"
-    }); 
+    });
     newBtn.innerHTML = '<i class="fa fa-plus-square" aria-hidden="true"></i>';
     let td = createAnyElement("td");
     td.appendChild(newBtn);
@@ -115,7 +115,23 @@ function newUserRow() {
 function createUser(btn) {
     let tr = btn.parentElement.parentElement;
     let data = getRowData(tr);
-    console.log(data);
+    delete data.id;
+    let fetchOptions = {
+        method: "POST",
+        mode: "cors",
+        cache: "no-cache",
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+    };
+
+    fetch(`http://localhost:3000/users`, fetchOptions).then(
+        resp => resp.json(),
+        err => console.error(err)
+    ).then(
+        data => startGetUsers()
+    );
 }
 
 
@@ -127,4 +143,3 @@ function getRowData(tr) {
     }
     return data;
 } 
-//
