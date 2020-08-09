@@ -1,45 +1,4 @@
 {
-  "users": [
-    {
-      "name": "Zoltan Kis",
-      "email": "rodnas.ssik.56@gmail.com",
-      "id": 5
-    },
-    {
-      "name": "Edgar Tot",
-      "email": "admin@ili.hu",
-      "id": 6
-    },
-    {
-      "name": "Holló Éliás",
-      "email": "allias@gmail.com",
-      "id": 7
-    },
-    {
-      "name": "Kiss Zoltán",
-      "email": "kiss.zoltan.84@gmail.com",
-      "id": 8
-    },
-    {
-      "name": "Edgar Toth",
-      "email": "toth.edgar@samsung.com",
-      "id": 9
-    },
-    {
-      "name": "Kis Zoltán",
-      "email": "z.kiss@samsung.com",
-      "id": 10
-    },
-    {
-      "name": "22éé22",
-      "email": "22áá22",
-      "id": 11
-    },
-    {
-      "name": "33éé33",
-      "email": "33áá33",
-      "id": 12
-    }
-  ],
+  "users": [],
   "comments": []
 }
