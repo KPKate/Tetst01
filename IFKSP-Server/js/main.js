@@ -1,3 +1,6 @@
+//Keys of users.
+let keys = ["id","name", "email"];
+
 // Get data from the server.
 function getServerData(url) {
     let fetchOptions = {
@@ -32,11 +35,16 @@ function fillDataTable(data, tableID) {
     tBody.innerHTML = '';
     let newRow = newUserRow();
     tBody.appendChild(newRow);
+
     for (let row of data) {
         let tr = createAnyElement("tr");
-        for (let k in row) {
+        for (let k of keys) {
             let td = createAnyElement("td");
-            td.innerHTML = row[k];
+           let input = createAnyElement("input", {
+               class: "form-control",
+               value: row[k]
+           });
+               td.appendChild(input);
             tr.appendChild(td);
         }
         let btnGroup = createBtnGroup();
@@ -90,7 +98,7 @@ function delrow(btn) {
 //create  new user.
 function newUserRow() {
     let tr = createAnyElement("tr");
-    for (let k in { id: '', name: '', email: '' }) {
+    for (let k of keys) {
         let td = createAnyElement("td");
         let input = createAnyElement("input", {
             class: "form-control",
