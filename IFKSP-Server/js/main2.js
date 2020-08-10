@@ -53,10 +53,10 @@ function createAnyElement(name, attributes) {
 }
 
 function createBtnGroup() {
-    let group = createAnyElement("div", { class: "btn btn-group" });
-    let infoBtn = createAnyElement("button", { class: "btn btn-info",/* onclick: "getInfo(this)"*/ });
+    let group = createAnyElement("div", {class: "btn btn-group"});
+    let infoBtn = createAnyElement("button", {class: "btn btn-info",/* onclick: "getInfo(this)"*/});
     infoBtn.innerHTML = '<i class="fa fa-refresh" aria-hidden="true"></i>';
-    let delBtn = createAnyElement("button", { class: "btn btn-danger", onclick: "delrow(this)" });
+    let delBtn = createAnyElement("button", {class: "btn btn-danger", onclick: "delrow(this)"});
     delBtn.innerHTML = '<i class="fa fa-trash" aria-hidden="true"></i>';
 
     group.appendChild(infoBtn);
@@ -69,7 +69,7 @@ function createBtnGroup() {
 
 function delrow(btn) {
     let tr = btn.parentElement.parentElement.parentElement;
-    console.log(tr);
+  
     let id = tr.querySelector("td:first-child").innerHTML;
     console.log("id", id);
 
