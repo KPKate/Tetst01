@@ -30,6 +30,9 @@ function fillDataTable(data, tableID) {
         return;
     }
 
+let newRow = newUserRow(data[0]);
+table.appendChild(newRow);
+
     let tBody = table.querySelector("tbody");
     for (let row of data) {
         let tr = createAnyElement("tr");
@@ -98,8 +101,22 @@ function newUserRow(row) {
         class:"form-control",
         name:k
     });
-    td.appendChild(infoBtn);
-    td.appendChild(delRow);
+    td.appendChild(input);
+    tr.appendChild(td);
     }
+    
+    let newBtn = createAnyElement("button", {
+        class:'btn  btn-success',
+        onclick: "createUser(this)"
+    });
+    newBtn.innerHTML= '<i class="fa fa-plus-square" aria-hidden="true"></i>';
+   let td = createAnyElement("td");
+    td.appendChild(newBtn);
+  tr.appendChild(td);
+
+    return tr;
+}
+
+function addUser() {
 
 }
