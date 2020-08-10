@@ -80,7 +80,7 @@ function createBtnGroup() {
     return td;
 }
 
-function delrow(btn) {
+function delRow(btn) {
     let tr = btn.parentElement.parentElement.parentElement;
     let id = tr.querySelector("td:first-child").innerHTML;
     let fetchOptions = {

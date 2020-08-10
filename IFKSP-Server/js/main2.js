@@ -56,7 +56,7 @@ function createBtnGroup() {
     let group = createAnyElement("div", {class: "btn btn-group"});
     let infoBtn = createAnyElement("button", {class: "btn btn-info",/* onclick: "getInfo(this)"*/});
     infoBtn.innerHTML = '<i class="fa fa-refresh" aria-hidden="true"></i>';
-    let delBtn = createAnyElement("button", {class: "btn btn-danger", onclick: "delrow(this)"});
+    let delBtn = createAnyElement("button", {class: "btn btn-danger", onclick: "delRow(this)"});
     delBtn.innerHTML = '<i class="fa fa-trash" aria-hidden="true"></i>';
 
     group.appendChild(infoBtn);
@@ -67,7 +67,7 @@ function createBtnGroup() {
     return td;
 }
 
-function delrow(btn) {
+function delRow(btn) {
     let tr = btn.parentElement.parentElement.parentElement;
   
     let id = tr.querySelector("td:first-child").innerHTML;
@@ -87,4 +87,19 @@ function delrow(btn) {
             startGetUsers();
         }
     );
+}
+
+// create nem user
+function newUserRow(row) {
+    let tr  = createAnyElement("tr");
+    for (let k of keys) {
+        let td = createAnyElement("td") ;
+    let input = createAnyElement("input",{
+        class:"form-control",
+        name:k
+    });
+    td.appendChild(infoBtn);
+    td.appendChild(delRow);
+    }
+
 }

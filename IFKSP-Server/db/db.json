@@ -1,21 +1,6 @@
 {
   "users": [
     {
-      "id": 3,
-      "name": "KeresztNév03 VezetékNév03",
-      "email": "name03@service.hu"
-    },
-    {
-      "id": 4,
-      "name": "KeresztNév04 VezetékNév04",
-      "email": "name04@service.hu"
-    },
-    {
-      "id": 5,
-      "name": "KeresztNév05 VezetékNév05",
-      "email": "name05@service.hu"
-    },
-    {
       "id": 7,
       "name": "KeresztNév07 VezetékNév07",
       "email": "name07@service.hu"
