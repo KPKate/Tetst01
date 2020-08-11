@@ -39,22 +39,32 @@ function fillDataTable(data, tableID) {
         let tr = createAnyElement("tr");
         for (let k of keys) {
             let td = createAnyElement("td");
+            console.log( "név érték", k, row[k]);
+
             if ( k == "id") {
-                let input = createAnyElement ("input", {
+            let input = createAnyElement ("input", {
+                class: "form-control",
+                value: row[k],
+                name: k,
+                readonly: true
+               
+            });
+            td.appendChild(input);   
+            console.log( "név érték", k, row[k]);
+            } else { 
+               let input = createAnyElement ("input", {
                     class: "form-control",
                     value: row[k],
-                    readonly: true
-                });
-                td.appendChild(input);
-            } else {
-                let input = createAnyElement ("input", {
-                    class: "form-control",
-                    value: row[k]
-                });
+                    name: k,
+               } );
+                console.log( "név érték", k, row[k]);
+
                 td.appendChild(input);
             }
             tr.appendChild(td);
+            return tr;
         }
+
         let btnGroup = createBtnGroup();
         tr.appendChild(btnGroup);
         tBody.appendChild(tr);
@@ -163,7 +173,8 @@ return data;
 
 //set data
 function setRow (btn) {
-    let tr =btn.parentElement.parentElement.parentElement;
+    let tr = btn.parentElement.parentElement.parentElement;
     let data = getRowData(tr);
     console.log(data);
+    data =>  startGetUsers();
 }

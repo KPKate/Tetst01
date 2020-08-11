@@ -1,34 +1,34 @@
 {
   "users": [
     {
-      "name": "jsas",
-      "email": "rodnas.ssik.56@gmail.com",
-      "id": 9
+      "id": 1,
+      "name": "KeresztNév01 VezetékNév01",
+      "email": "name01@service.hu"
+    },
+    {
+      "id": 2,
+      "name": "KeresztNév02 VezetékNév02",
+      "email": "name02@service.hu"
+    },
+    {
+      "id": 3,
+      "name": "KeresztNév03 VezetékNév03",
+      "email": "name03@service.hu"
     },
     {
       "name": "Edgar Toth",
       "email": "toth.edgar@samsung.com",
-      "id": 10
+      "id": 19
+    },
+    {
+      "name": "Edgar Toth",
+      "email": "toth.edgar@samsung.com",
+      "id": 20
     },
     {
       "name": "Kiss Zoltán",
       "email": "z.kiss@samsung.com",
-      "id": 12
-    },
-    {
-      "name": "Edgar Toth",
-      "email": "toth.edgar@samsung.com",
-      "id": 14
-    },
-    {
-      "name": "Kiss Zoltán",
-      "email": "dummyEmail",
-      "id": 15
-    },
-    {
-      "name": "Zsuzsanna",
-      "email": "zsz.kiss@samsung.com",
-      "id": 16
+      "id": 21
     }
   ],
   "comments": []

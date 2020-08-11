@@ -1,0 +1,6 @@
+{
+    "liveServer.settings.ignoreFiles": [
+        "d:/GitHub/KPKate/Tetst01/IFKSP-Server/db/db.json",
+        "d:/GitHub/KPKate/Tetst01/IFKSP-Server/.node_modules"
+    ]
+}
