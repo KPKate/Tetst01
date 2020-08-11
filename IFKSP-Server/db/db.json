@@ -1,4 +1,20 @@
 {
-  "users": [],
+  "users": [
+    {
+      "name": "Zoltan Kiss",
+      "email": "rodnas.ssik.56@gmail.com",
+      "id": 1
+    },
+    {
+      "name": "Edgar Toth",
+      "email": "rodnas.ssik.56@gmail.com",
+      "id": 3
+    },
+    {
+      "name": "Zoltan Kiss",
+      "email": "z.kiss@samsung.com",
+      "id": 4
+    }
+  ],
   "comments": []
 }
