@@ -19,7 +19,6 @@ function getServerData(url) {
 function startGetUsers() {
     getServerData("http://localhost:3000/users").then(
         data => fillDataTable(data, "userTable"),
-        console.log(data)
     );
 }
 document.querySelector("#getDataBtn").addEventListener("click", startGetUsers);
@@ -31,12 +30,10 @@ function fillDataTable(data, tableID) {
         console.error(`Table "${tableID}" is not found.`);
         return;
     }
-
+    let newRow = newUserRow(data[0]);
+    tBody.appendChild(newRow);
     //Add  new user row to the table.
     let tBody = table.querySelector("tbody");
-    tBody.innerHTML = '';
-    let newRow = newUserRow();
-    tBody.appendChild(newRow);
 
     for (let row of data) {
         let tr = createAnyElement("tr");
