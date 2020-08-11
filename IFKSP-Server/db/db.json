@@ -6,11 +6,6 @@
       "email": "name01@service.hu"
     },
     {
-      "id": 2,
-      "name": "KeresztNév02 VezetékNév02",
-      "email": "name02@service.hu"
-    },
-    {
       "id": 3,
       "name": "KeresztNév03 VezetékNév03",
       "email": "name03@service.hu"
@@ -21,14 +16,14 @@
       "id": 19
     },
     {
-      "name": "Edgar Toth",
-      "email": "toth.edgar@samsung.com",
-      "id": 20
+      "name": "Kiss Zoltán",
+      "email": "z.kiss@samsung.com",
+      "id": 21
     },
     {
       "name": "Kiss Zoltán",
       "email": "z.kiss@samsung.com",
-      "id": 21
+      "id": 22
     }
   ],
   "comments": []
