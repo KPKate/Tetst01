@@ -16,14 +16,19 @@
       "id": 12
     },
     {
-      "name": "Kiss Zoltán",
-      "email": "rodnas.ssik.56@gmail.com",
-      "id": 13
-    },
-    {
       "name": "Edgar Toth",
       "email": "toth.edgar@samsung.com",
       "id": 14
+    },
+    {
+      "name": "Kiss Zoltán",
+      "email": "dummyEmail",
+      "id": 15
+    },
+    {
+      "name": "Zsuzsanna",
+      "email": "zsz.kiss@samsung.com",
+      "id": 16
     }
   ],
   "comments": []
