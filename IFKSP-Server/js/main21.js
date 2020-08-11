@@ -29,16 +29,25 @@ function fillDataTable(data, tableID) {
         console.error(`Table "${tableID}" is not found.`);
         return;
     }
-
-let newRow = newUserRow(data[0]);
-table.appendChild(newRow);
-
+    
     let tBody = table.querySelector("tbody");
+    tBody.innerHTML = '';
+    let newRow = newUserRow();
+    tBody.appendChild(newRow)
     for (let row of data) {
         let tr = createAnyElement("tr");
         for (let k of keys) {
             let td = createAnyElement("td");
-            td.innerHTML = row[k];
+            if ( k == "id") {
+                td.innerHTML = row[k];
+            } else {
+                let input = createAnyElement ("input", {
+                    class: "form-control",
+                    value: row[k]
+                });
+
+                td.appendChild(input);
+            }
             tr.appendChild(td);
         }
         let btnGroup = createBtnGroup();
@@ -57,7 +66,7 @@ function createAnyElement(name, attributes) {
 
 function createBtnGroup() {
     let group = createAnyElement("div", {class: "btn btn-group"});
-    let infoBtn = createAnyElement("button", {class: "btn btn-info",/* onclick: "getInfo(this)"*/});
+    let infoBtn = createAnyElement("button", {class: "btn btn-info", onclick: "setRow(this)"});
     infoBtn.innerHTML = '<i class="fa fa-refresh" aria-hidden="true"></i>';
     let delBtn = createAnyElement("button", {class: "btn btn-danger", onclick: "delRow(this)"});
     delBtn.innerHTML = '<i class="fa fa-trash" aria-hidden="true"></i>';
@@ -128,7 +137,7 @@ mode: "cors",
      'Content-Type': 'application/json'
  },
  body: JSON.stringify(data)
-};
+}
 fetch(`http://localhost:3000/users`, fetchOptions).then(
     resp => resp.json(),
     err => console.error(err)
@@ -145,4 +154,10 @@ for (let i=0; i<inputs.length; i++) {
     data[inputs[i].name] =inputs[i].value;
 }
 return data;
+}
+
+//set data
+function setRow (btn) {
+    let tr =btn.parentElement.parentElement.parentElement;
+    let data = getRowData(tr);
 }

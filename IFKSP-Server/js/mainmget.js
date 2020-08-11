@@ -29,8 +29,11 @@ function fillDataTable(data, tableID) {
         console.error(`Table "${tableID}" is not found.`);
         return;
     }
-
+    
     let tBody = table.querySelector("tbody");
+    tBody.innerHTML = '';
+    let newRow = newUserRow();
+    tBody.appendChild(newRow)
     for (let row of data) {
         let tr = createAnyElement("tr");
         for (let k of keys) {
@@ -53,10 +56,10 @@ function createAnyElement(name, attributes) {
 }
 
 function createBtnGroup() {
-    let group = createAnyElement("div", { class: "btn btn-group" });
-    let infoBtn = createAnyElement("button", { class: "btn btn-info",/* onclick: "getInfo(this)"*/ });
+    let group = createAnyElement("div", {class: "btn btn-group"});
+    let infoBtn = createAnyElement("button", {class: "btn btn-info",/* onclick: "getInfo(this)"*/});
     infoBtn.innerHTML = '<i class="fa fa-refresh" aria-hidden="true"></i>';
-    let delBtn = createAnyElement("button", { class: "btn btn-danger", onclick: "delrow(this)" });
+    let delBtn = createAnyElement("button", {class: "btn btn-danger", onclick: "delRow(this)"});
     delBtn.innerHTML = '<i class="fa fa-trash" aria-hidden="true"></i>';
 
     group.appendChild(infoBtn);
@@ -67,9 +70,8 @@ function createBtnGroup() {
     return td;
 }
 
-function delrow(btn) {
+function delRow(btn) {
     let tr = btn.parentElement.parentElement.parentElement;
-    console.log(tr);
     let id = tr.querySelector("td:first-child").innerHTML;
     console.log("id", id);
 
@@ -87,4 +89,60 @@ function delrow(btn) {
             startGetUsers();
         }
     );
+}
+
+// create nem user
+function newUserRow(row) {
+    let tr  = createAnyElement("tr");
+    for (let k of keys) {
+        let td = createAnyElement("td") ;
+    let input = createAnyElement("input",{
+        class:"form-control",
+        name:k
+    });
+    td.appendChild(input);
+    tr.appendChild(td);
+    }
+    
+    let newBtn = createAnyElement("button", {
+        class:'btn  btn-success',
+        onclick: "createUser(this)"
+    });
+    newBtn.innerHTML= '<i class="fa fa-plus-square" aria-hidden="true"></i>';
+   let td = createAnyElement("td");
+    td.appendChild(newBtn);
+  tr.appendChild(td);
+
+    return tr;
+}
+
+function createUser(btn) {
+let tr = btn.parentElement.parentElement;
+let data = getRowData(tr);
+delete data.id;
+let fetchOptions = {
+method: "POST",
+mode: "cors",
+ cache:"no-cache",
+ headers: {
+     'Content-Type': 'application/json'
+ },
+ body: JSON.stringify(data)
+}
+fetch(`http://localhost:3000/users`, fetchOptions).then(
+    resp => resp.json(),
+    err => console.error(err)
+).then(
+    data=> console.log(data)
+);
+    console.log (data);
+}
+
+function getRowData( tr) {
+let inputs = tr.querySelectorAll("input.form-control");
+let data ={};
+for (let i=0; i<inputs.length; i++) {
+    data[inputs[i].name] =inputs[i].value;
+}
+return data;
 }
