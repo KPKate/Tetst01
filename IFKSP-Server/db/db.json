@@ -1,21 +1,6 @@
 {
   "users": [
     {
-      "id": 1,
-      "name": "KeresztNév01 VezetékNév01",
-      "email": "name01@service.hu"
-    },
-    {
-      "id": 3,
-      "name": "KeresztNév03 VezetékNév03",
-      "email": "name03@service.hu"
-    },
-    {
-      "name": "Edgar Toth",
-      "email": "toth.edgar@samsung.com",
-      "id": 19
-    },
-    {
       "name": "Kiss Zoltán",
       "email": "z.kiss@samsung.com",
       "id": 21
@@ -24,6 +9,11 @@
       "name": "Kiss Zoltán",
       "email": "z.kiss@samsung.com",
       "id": 22
+    },
+    {
+      "name": "Zsuzsanna",
+      "email": "z.kiss@samsung.com",
+      "id": 23
     }
   ],
   "comments": []

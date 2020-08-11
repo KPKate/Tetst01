@@ -33,17 +33,30 @@ function fillDataTable(data, tableID) {
     let tBody = table.querySelector("tbody");
     tBody.innerHTML = '';
     let newRow = newUserRow();
-    tBody.appendChild(newRow)
+    tBody.appendChild(newRow);
+
     for (let row of data) {
         let tr = createAnyElement("tr");
         for (let k of keys) {
             let td = createAnyElement("td");
+           // let input = createAnyElement("input", {
+          //     class:"form-control",
+            //    value: row[k],
+            //    name: k
+          //  })
             if ( k == "id") {
-                td.innerHTML = row[k];
+                let input = createAnyElement ("input", {
+                        class:"form-control",
+                        value: row[k],
+                        name: k,
+                    readonly: true
+                    });
+                    td.appendChild(input);
             } else {
                 let input = createAnyElement ("input", {
-                    class: "form-control",
-                    value: row[k]
+                    class:"form-control",
+                    value: row[k],
+                    name: k
                 });
 
                 td.appendChild(input);
@@ -160,4 +173,5 @@ return data;
 function setRow (btn) {
     let tr =btn.parentElement.parentElement.parentElement;
     let data = getRowData(tr);
+    console.log(data," setrow");
 }
