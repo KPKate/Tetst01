@@ -160,5 +160,20 @@ return data;
 function setRow (btn) {
     let tr =btn.parentElement.parentElement.parentElement;
     let data = getRowData(tr);
-    console.log(data," setrow");
+    console.log(data, "setrow");
+    let fetchOptions = {
+        method: "PUT",
+       // mode: "cros",
+        cache: "no-cache",
+        headers: {
+            "Content-Type":"application/json"
+        },
+        body: JSON.stringify(data)
+    };
+    fetch(`http://localhost:3000/users/${data.id}`, fetchOptions).then(
+        resp => resp.json(),
+        err => console.error(err)
+    ).then(
+        data => startGetUsers()
+    );
 }
