@@ -45,7 +45,7 @@ function fillDataTable(data, tableID) {
                 name: k
             });
             if ( k == "id") {
-                input.setAttribute("readonly", true);
+           input.setAttribute("readonly", true);
                     }
             td.appendChild(input);
             tr.appendChild(td);
